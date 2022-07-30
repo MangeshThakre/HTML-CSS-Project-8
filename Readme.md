@@ -15,4 +15,4 @@
  ##  _[live project link](https://github.com/MangeshThakre/HTML-CSS-Project-8/blob/master/project-8.png "HTML-CSS_Project-8" )_
 
 ## Screenshort
-![alt text](https://github.com/MangeshThakre/HTML-CSS-Project-8/blob/master/porject-8.png)
+![alt text](https://github.com/MangeshThakre/HTML-CSS-Project-8/blob/master/project-8.png)
