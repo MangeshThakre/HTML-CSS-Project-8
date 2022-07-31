@@ -3,7 +3,7 @@
 # wed design landing page
 > HTML - CSS Project-8 
 
-🙌 hey There I'm mangesh Thakre Wed Developer 
+🙌 hey There I'm mangesh Thakre Web Developer 
 ##  What I've learnd form this project 
  
  - Learned to set background image on ::after pseudo element 
