@@ -23,6 +23,11 @@
           <h5 class="nav-item">HISTORY</h5>
           <h5 class="nav-item">BLOG</h5>
           <h5 class="nav-item">CONTACT</h5>
+          <button class="signin-btn close">SIGN IN</button>
+        
+        </div>
+        <div class="buttoncontainer">
+          <div class ="hamburger-menu"> </div>
         </div>
         <button class="signin-btn">SIGN IN</button>
       </nav>
@@ -48,4 +53,22 @@
       </div>
     </div>
   </body>
+
+  <script>
+  
+    // const herocontainer = document.querySelector(".hero-container")
+    const signinBtn = document.querySelector("signin-btn")
+    const sidebarMenu = document.querySelector(".nav-items")
+    const buttoncontainer =document.querySelector(".buttoncontainer")
+    const burgermenu = document.querySelector(".hamburger-menu")
+    buttoncontainer.addEventListener('click' , (e)=>{
+      burgermenu.classList.toggle("cross-menu")
+      sidebarMenu.classList.toggle("close")
+      signinBtn.classList.toggle("close")
+      // herocontainer.classList.toggle("shadow")
+      
+    })
+
+  </script>
+
 </html>

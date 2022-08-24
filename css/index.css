@@ -6,6 +6,7 @@
 }
 body {
   position: relative;
+  height: 100vh;
 }
 
 body::before {
@@ -105,7 +106,6 @@ nav > button:hover {
   cursor: pointer;
 }
 
-
 .left-section > button:hover {
   background: linear-gradient(90deg, #ff89db, #955bf1);
 }
@@ -121,4 +121,155 @@ nav > button:hover {
 img[alt="intro-img"] {
   top: 7rem;
   height: 39rem;
+}
+
+/* .hamburger-menu */
+
+.hamburger-menu::before {
+  position: absolute;
+  content: "";
+  background: black;
+  width: 1.5rem;
+  height: 3px;
+  border-radius: 20px;
+  bottom: 6px;
+  transition: all 0.3s ease;
+}
+
+.hamburger-menu {
+  display: none;
+  background: black;
+  width: 24px;
+  height: 3px;
+  border-radius: 20px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.hamburger-menu::after {
+  position: absolute;
+  content: "";
+  background: black;
+  width: 1.5rem;
+  height: 3px;
+  border-radius: 20px;
+  top: 6px;
+  transition: all 0.3s ease;
+}
+
+.cross-menu::before {
+  bottom: 0px;
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+}
+
+.cross-menu {
+  background: transparent;
+}
+
+.cross-menu::after {
+  transition: all 0.3s ease;
+  top: 0px;
+  transform: rotate(-45deg);
+}
+
+.buttoncontainer {
+  display: none;
+}
+
+.close {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  body::before {
+    background-size: 120%;
+  }
+
+  img[alt="intro-img"] {
+    display: none;
+  }
+
+  .main-div {
+    padding: 37px 30px 0 30px;
+  }
+
+  nav > img[alt="logo"] {
+    width: 5rem;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  .buttoncontainer {
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav > .signin-btn {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .vector-img {
+    top: 32rem;
+    left: 0px;
+  }
+
+  .left-section {
+    margin: auto;
+    width: auto;
+    text-align: center;
+  }
+  .left-section > h1 {
+    font-size: 3rem;
+    margin: 30px 0 53px 0;
+  }
+
+  .left-section > h4 {
+    margin: 50px 0;
+  }
+
+  /* sidebarmenu */
+  .close {
+    display: block;
+  }
+
+  .nav-items {
+    background-image: url("../images/backcover.svg");
+    height: 70%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 6rem;
+    line-height: 4;
+    width: 100%;
+    padding-top: 3rem;
+    background-position: center;
+    background-color: white;
+    text-align: center;
+  }
+  .nav-item:hover::after {
+    content: "";
+    display: none;
+  }
+  .signin-btn {
+    display: block;
+    margin: 40px auto;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(90deg, #955bf1, #ff89db);
+    color: #fff;
+    cursor: pointer;
+    
+  }
 }
