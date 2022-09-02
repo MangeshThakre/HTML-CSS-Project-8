@@ -12,7 +12,7 @@
 
 > #### This project took 2 hour to complete, background-positioning took most of the time.  
 
- ##  _[live project link](https://github.com/MangeshThakre/HTML-CSS-Project-8/blob/master/project-8.png "HTML-CSS_Project-8" )_
+ ##  _[live project link](https://full-stack-js-html-css-project-8.netlify.app/ "HTML-CSS_Project-8" )_
 
 ## Screenshort
 ![alt text](https://github.com/MangeshThakre/HTML-CSS-Project-8/blob/master/project-8.png)
